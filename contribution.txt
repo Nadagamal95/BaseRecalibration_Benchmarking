@@ -1,2 +1,14 @@
 #Eman
-firstly I choose a model organism "_E.coli_" but not all team members approved this choice so we discard it.
+
+1- I choose a model organism "_E.coli_" but not all team members approved this choice so we discard it.
+- i provide resourses such as;
+https://gatkforums.broadinstitute.org/gatk/discussions/tagged/bacteria/p1
+https://github.com/ekg/alignment-and-variant-calling-tutorial/blob/master/README.md
+https://gatkforums.broadinstitute.org/gatk/discussion/9790/haplotypecaller-ploidy-for-pooled-samples-of-bacterial-genomes
+https://software.broadinstitute.org/gatk/documentation/article?id=10913
+
+2- after we agreed on GATK germline pipline and whole genome for alignment step, i curated the data set they choose as it was targeted seq against chr21 trisomy only. so I choose another dataset and we agreed on it:
+paper:
+http://www.bloodjournal.org/content/127/21/2598.long?sso-checked=true#abstract-2
+data set:
+https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP053196 #we agreed on first SRR1839137
