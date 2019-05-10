@@ -200,6 +200,21 @@ gatk --java-options "-Xmx2G" VariantFiltration \
 --filter-expression "vc.hasAttribute('DP') && DP > 3105" \
 -O raw_variants_ann_INDEL_clean.vcf
 
+
+
+
+
+
+*Challenges:
+1. VCF file of known variants have been very challenging. We believe that VCF files are not well-curated even if they are uploaded on reliable data resources like Ensemble for example. We struggled to solve many errors found in whole-genome VCF file (latest release) and also individual VCF files for chromosomes 1, 15, and 21.
+2. To get reliable mapping quality and pipeline, a high computational power is needed (RAM and disk space).
+3. Not all errors of VCF files are troubleshooted online.
+4. For reliable BQSR results, sample sizes and reads should be high enough. With inadqutae disk space and slow Internet connection. It takes several hours to download a reasonable size dataset.
+
+
+
+
+
 *References:
 1. https://gatkforums.broadinstitute.org/gatk/discussion/44/base-quality-score-recalibration-bqsr
 2. http://zenfractal.com/2014/01/25/bqsr/
