@@ -28,7 +28,7 @@ and search for a dataset according to this chromosome in SRA
 • https://genome.sph.umich.edu/w/images/e/e6/Seqshop_may_2015_day2_snp_lecture_v2.pdf
 
 4.	Work on R script to get figures before and after base recalibration for SNP and Indels
-We supposed that after working on pipeline, we reach to VCF statistics
+We supposed that we will move on pipeline of this dataset and reach to VCF statistics
 but unfortunately we couldn't because the number of annotated variants equal to zero 
 So the document of figures "supposed results before filtration" got out R script using test data 
 ( wget https://de.cyverse.org/dl/d/3CE425D7-ECDE-46B8-AB7F-FAF07048AD42/samples.tar.gz ) that supposed to be replaced by our data.
