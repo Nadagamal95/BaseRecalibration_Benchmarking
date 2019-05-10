@@ -12,8 +12,7 @@ In our project, we planned to compare variant calling on different types of data
 
 *Materials:
 i- Software:
-- Bowtie: An ultrafast memory-efficient short read aligner
-- Burrows-Wheeler Alignment Tool (BWA)
+- Bowtie 2: Fast and sensitive read alignment
 - Sequence Alignment/Map tools (SAMtools)
 - Picard Tools
 - Genome Analysis Toolkit (GATK)
@@ -200,6 +199,14 @@ gatk --java-options "-Xmx2G" VariantFiltration \
 --filter-name "indelDP" \
 --filter-expression "vc.hasAttribute('DP') && DP > 3105" \
 -O raw_variants_ann_INDEL_clean.vcf
+
+*References:
+1. https://gatkforums.broadinstitute.org/gatk/discussion/44/base-quality-score-recalibration-bqsr
+2. http://zenfractal.com/2014/01/25/bqsr/
+3. Frazer Meacham el al. Identification and correction of systematic error in high-throughput sequence data. BMC Bioinformatics (2011), 12:451
+4. Franziska Pfeiffer et al. Systematic evaluation of error rates and causes in short samples in next-generation sequencing. Scientific Reports (2018), volume 8, Article number: 10950
+5. Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
+Li H., Handsaker B., Wysoker A., Fennell T., Ruan J., Homer N., Marth G., Abecasis G., Durbin R. and 1000 Genome Project Data Processing Subgroup. The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics (2009) 25, 2078-9. [PMID: 19505943] 
 
 
 
