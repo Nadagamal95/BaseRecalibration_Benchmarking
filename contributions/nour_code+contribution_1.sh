@@ -4,10 +4,10 @@ First of all, I worked on a dataset SRR8115017.fastq, I have decided to work wit
 I found their indexing is more efficient than BWA in addition to it’s manual is more readable and informative,
 so before alignment step I made me mind to read the whole manual and understand almost their arguments.
 
-Downloading the ref.
+#Downloading the ref.
 wget ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz
 
-Building ref. index
+#Building ref. index
 bowtie2-build ~/BaseRecalibration_Benchmarking/Homo_sapiens.GRCh38.dna.chromosome.21.fa index_two_bowtie2/Homo_sapiens.fa
 
 Before beginning in the alignment step, I remembered from the assignment that when I run the haplotypecaller,
@@ -40,10 +40,10 @@ then the running is going smoothly.
 
 bowtie2 -p 20 -q --no-unal -x index_two_bowtie2/Homo_sapiens.fa -U SRR8115017.fastq.gz --rg-id $RGID --rg SM:$SM --rg PL:$PL --rg LB:$LB --rg PU:$PU 2> align_stats.txt| samtools view -Sb -o bowtie2.bam
 
-Sorting:
+#Sorting:
 samtools sort bowtie2.bam -o SRR8115017.sorted.bam
 
-Mark-duplicates:
+#Mark-duplicates:
 picard_path=$CONDA_PREFIX/share/picard-2.19.0-0
 
 java -Xmx2g -jar $picard_path/picard.jar MarkDuplicates INPUT=SRR8115017.sorted.bam OUTPUT=SRR8115017.dedup.bam METRICS_FILE=SRR8115017.metrics.txt
@@ -54,7 +54,6 @@ java -Xmx2g -jar $picard_path/picard.jar BuildBamIndex VALIDATION_STRINGENCY=LEN
 java -Xmx2g -jar $picard_path/picard.jar CreateSequenceDictionary R=Homo_sapiens.GRCh38.dna.chromosome.21.fa O=Homo_sapiens.GRCh38.dna.chromosome.21.dict
 
 samtools faidx Homo_sapiens.GRCh38.dna.chromosome.21.fa
-
 
 Downloading known variants:
 wget ftp://ftp.ensembl.org/pub/release-96/variation/vcf/homo_sapiens/homo_sapiens-chr21.vcf.gz
