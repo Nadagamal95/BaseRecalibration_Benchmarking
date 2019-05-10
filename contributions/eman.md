@@ -14,6 +14,7 @@ data set:
 https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP053196 #we agreed on first SRR1839137
 workflow:
 https://software.broadinstitute.org/gatk/best-practices/workflow?id=11145
+https://software.broadinstitute.org/gatk/documentation/article.php?id=4150
 
 - i choose two samples and i aligned them against chr1 & chr3 "GRCh38",(due to computational limitation)
 sample1:SRR1839137 #data size(~10G) #affected female
