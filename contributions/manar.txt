@@ -3,14 +3,15 @@
 and their variation files
 ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/
 ftp://ftp.ensembl.org/pub/release-96/variation/gvf/homo_sapiens/
-human genome resourse and its vcf files:
+human genome resource and its vcf files:
 https://www.ncbi.nlm.nih.gov/genome/guide/human/
 •	Direct to SRA where datasets are very large then return back to Ensemble to find which chromosome is small in size 
 and search for a dataset according to this chromosome in SRA 
-•	Finding that chromosome 21&22 are the smallest ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/
+•	Finding that chromosome 21&22 are the smallest
 •	Direct to SRA and search for dataset related to chromosome 21 considering its size due to computational power.
-•	Dataset is https://www.ncbi.nlm.nih.gov/sra/SRX4941314[accn]   
-•	Trying to download it using this link: https://www.ncbi.nlm.nih.gov/books/NBK158899/#SRA_download.accessing_the__ascp_utility
+•	Dataset for Trisomy 21 "https://www.ncbi.nlm.nih.gov/sra/SRX4941314[accn]"   
+•	Trying to download it using this resource: "https://www.ncbi.nlm.nih.gov/books/NBK158899/#SRA_download.accessing_the__ascp_utility"
+
 "wget -c ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR811/SRR8115017/SRR8115017.sra"
 
 2. This dataset is selected according to:
