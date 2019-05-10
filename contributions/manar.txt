@@ -11,7 +11,7 @@ and search for a dataset according to this chromosome in SRA
 •	Direct to SRA and search for dataset related to chromosome 21 considering its size due to computational power.
 •	Dataset for Trisomy 21 "https://www.ncbi.nlm.nih.gov/sra/SRX4941314[accn]"   
 •	Trying to download it using this resource: "https://www.ncbi.nlm.nih.gov/books/NBK158899/#SRA_download.accessing_the__ascp_utility"
-
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/{SRR|ERR|DRR}/<first 6 characters of accession>/<accession>/<accession>.sra
 "wget -c ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR811/SRR8115017/SRR8115017.sra"
 
 2. This dataset is selected according to:
