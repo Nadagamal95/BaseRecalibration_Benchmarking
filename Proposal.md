@@ -36,6 +36,7 @@ We decided to choose diverse datasets and GATK pipelines. We chose germline shor
 The applied data set (47,XX,+21) genomic DNA was downloaded from https://www.ncbi.nlm.nih.gov/sra/SRX4941314[accn] . It was aligned to a reference of whole genome one time and to a reference of chromosome 21 another time using bowtie (http://bowtie-bio.sourceforge.net/index.shtml); resulting in the generation of sam files which later were converted to sorted bam files using samtools.
 ```
 IV. Methods:
+
 Merge replicates:
 The Picard tools were used to merge the replicates by using the following command:
 java  -Xmx2g -jar $picard_path/picard.jar MergeSamFiles I=BD143_TGACCA_L005.sorted.bam I=BD143_TGACCA_L006.sorted.bam OUTPUT=BD143_TGACCA_merged.sorted.bam
@@ -209,24 +210,27 @@ gatk --java-options "-Xmx2G" VariantFiltration \
 -O raw_variants_ann_INDEL_clean.vcf
 
 
+V. Discussion
+``` java
 
 
 
-
-*Challenges:
+*Challenges*
 1. VCF file of known variants have been very challenging. We believe that VCF files are not well-curated even if they are uploaded on reliable data resources like Ensemble for example. We struggled to solve many errors found in whole-genome VCF file (latest release) and also individual VCF files for chromosomes 1, 15, and 21.
 2. To get reliable mapping quality and pipeline, a high computational power is needed (RAM and disk space).
 3. Not all errors of VCF files are troubleshooted online.
 4. For reliable BQSR results, sample sizes and reads should be high enough. With inadqutae disk space and slow Internet connection. It takes several hours to download a reasonable size dataset.
 
-*Recommendations:
+*Recommendations*
+
 There is an
 
 
 
+```
 
-
-*References:
+VI. References
+``` java
 1. https://gatkforums.broadinstitute.org/gatk/discussion/44/base-quality-score-recalibration-bqsr
 2. http://zenfractal.com/2014/01/25/bqsr/
 3. Frazer Meacham el al. Identification and correction of systematic error in high-throughput sequence data. BMC Bioinformatics (2011), 12:451
@@ -236,7 +240,7 @@ Li H., Handsaker B., Wysoker A., Fennell T., Ruan J., Homer N., Marth G., Abecas
 6. McKenna A, et al. The Genome Analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. GENOME RESEARCH (2010), 20:1297-303.
 7.  R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/
 8. Teder, Hindrek et al. TAC-seq: targeted DNA and RNA sequencing for precise biomarker molecule counting. NPJ genomic medicine vol. 3 34. 18 Dec. 2018, doi:10.1038/s41525-018-0072-5.
-
+```
 
 
 
