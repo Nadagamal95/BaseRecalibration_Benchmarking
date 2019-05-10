@@ -23,7 +23,7 @@ wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/{SRR|ERR|DRR}/
 •	Source: Genomics
 
 
-3.	Work on VCF statistics and filtration through these links:
+3.	Work on VCF filtration through these links:
 • https://www.france-bioinformatique.fr/sites/default/files/V04_FiltrageVariantNLapaluRoscoff2016_0.pdf
 • https://genome.sph.umich.edu/w/images/b/b4/Variant_Calling_and_Filtering_for_INDELs.pdf
 • https://genome.sph.umich.edu/w/images/e/e6/Seqshop_may_2015_day2_snp_lecture_v2.pdf
@@ -35,10 +35,10 @@ So the pdf file of figures "supposed results before filtration" in results folde
 ( wget https://de.cyverse.org/dl/d/3CE425D7-ECDE-46B8-AB7F-FAF07048AD42/samples.tar.gz ) that supposed to be replaced by our data.
 
 # Reading:
-5.	Paper of the study of this dataset: https://www.ncbi.nlm.nih.gov/pubmed?LinkName=sra_pubmed&from_uid=6667925
+5.	some information about the study of this dataset: https://www.ncbi.nlm.nih.gov/pubmed?LinkName=sra_pubmed&from_uid=6667925
 6.	Paper related to benchmarking: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006494
  
-# Troubleshooting: help in solving the troubleshooting that occur in running pipeline of this dataset
+# Troubleshooting: help in solving the errors that occur in running pipeline of this dataset
 • https://gatkforums.broadinstitute.org/gatk/discussion/7020/error-malformed-vcf-empty-alleles-are-not-permitted-in-vcf-records
 • https://www.biostars.org/p/177710/
  
