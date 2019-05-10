@@ -1,0 +1,43 @@
+1.	Search for dataset:
+•	First make a search at Ensemble where there is no fastq files, but there are fasta files for chromosomes as reference 
+and their variation files
+ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/
+ftp://ftp.ensembl.org/pub/release-96/variation/gvf/homo_sapiens/
+human genome resourse and its vcf files:
+https://www.ncbi.nlm.nih.gov/genome/guide/human/
+•	Direct to SRA where datasets are very large then return back to Ensemble to find which chromosome is small in size 
+and search for a dataset according to this chromosome in SRA 
+•	Finding that chromosome 21&22 are the smallest ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/
+•	Direct to SRA and search for dataset related to chromosome 21 considering its size due to computational power.
+•	Dataset is https://www.ncbi.nlm.nih.gov/sra/SRX4941314[accn]   
+•	Trying to download it using this link: https://www.ncbi.nlm.nih.gov/books/NBK158899/#SRA_download.accessing_the__ascp_utility
+"wget -c ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR811/SRR8115017/SRR8115017.sra"
+
+2. This dataset is selected according to:
+•	Its size as mentioned before: 56.7M
+•	Its platform: Illumina which is compatible with GATK
+•	Number of reads: 202721 reads
+•	Layout: single end to be different than other dataset
+•	Organism: Homosapiens to be compatible with GATK
+•	Source: Genomics
+
+
+3.	Work on VCF statistics and filtration through these links:
+• https://www.france-bioinformatique.fr/sites/default/files/V04_FiltrageVariantNLapaluRoscoff2016_0.pdf
+• https://genome.sph.umich.edu/w/images/b/b4/Variant_Calling_and_Filtering_for_INDELs.pdf
+• https://genome.sph.umich.edu/w/images/e/e6/Seqshop_may_2015_day2_snp_lecture_v2.pdf
+
+4.	Work on R script to get figures before and after base recalibration for SNP and Indels
+We supposed that after working on pipeline, we reach to VCF statistics
+but unfortunately we couldn't because the number of annotated variants equal to zero 
+So the document of figures "supposed results before filtration" got out R script using test data 
+( wget https://de.cyverse.org/dl/d/3CE425D7-ECDE-46B8-AB7F-FAF07048AD42/samples.tar.gz ) that supposed to be replaced by our data.
+
+# Reading:
+5.	Paper of the study of this dataset: https://www.ncbi.nlm.nih.gov/pubmed?LinkName=sra_pubmed&from_uid=6667925
+6.	Paper related to benchmarking: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006494
+ 
+# Troubleshooting: help in solving the troubleshooting that occur in running pipeline of this dataset
+• https://gatkforums.broadinstitute.org/gatk/discussion/7020/error-malformed-vcf-empty-alleles-are-not-permitted-in-vcf-records
+• https://www.biostars.org/p/177710/
+ 
