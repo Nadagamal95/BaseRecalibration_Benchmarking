@@ -1,0 +1,12 @@
+Location                     : SRR8115017.bqsr.gvcf.gz
+Failed Filters               : 0
+Passed Filters               : 73
+SNPs                         : 0
+MNPs                         : 0
+Insertions                   : 0
+Deletions                    : 0
+Indels                       : 0
+Same as reference            : 73
+SNP Transitions/Transversions: - (0/0)
+Insertion/Deletion ratio     : - (0/0)
+Indel/SNP+MNP ratio          : - (0/0)
