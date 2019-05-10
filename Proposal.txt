@@ -211,6 +211,9 @@ gatk --java-options "-Xmx2G" VariantFiltration \
 3. Not all errors of VCF files are troubleshooted online.
 4. For reliable BQSR results, sample sizes and reads should be high enough. With inadqutae disk space and slow Internet connection. It takes several hours to download a reasonable size dataset.
 
+*Recommendations:
+There is an
+
 
 
 
