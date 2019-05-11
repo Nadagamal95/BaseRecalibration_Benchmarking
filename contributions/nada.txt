@@ -1,0 +1,38 @@
+
+My contribution statement:
+
+My main contributions
+
+1)	In searching, and getting a dataset suitable for the aim of our project. 
+2)	Working on the dataset workflow by writing and running the script  until the VCF statistics
+3)	Interpret my results and trying to solve and analysis my troubleshootings
+
+Additional contributions
+
+1)	Contributed in the design & the workflow of the whole project
+2)	Helping in solving others troubleshoots
+3)	Contributed in helping Nour by doing the known variant part of the script for his dataset.
+ 
+ Description for the contributions
+ 
+ I found two datasets suitable: the first one was for a genomic neuroblastoma samples for WGS of human by using illumine Hiseq sequencer with paired end reads from the SRA database, but unfortunately it doesn't work out because of its huge size, and the second was for a genomic lung cancer samples for WGS of human: single circulating tumor cell by using illumine Miseq sequencer with paired end reads https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8617597, this dataset works out, it should be used on the whole genome ref. on (GRCh37/hg19) but because of the huge size of the human genome it doesn't work on the whole genome, so I managed to choose a specific chromosome and work on it instead. I choose chromosomes 11 and 5. Chr. 11 I chose it randomly and chromosome 5, I chose it based on literature. Chromosome 11 has worked, chromosome 5 it didn't work out in the alignment, actually I don't know why!!! I supposed to work by the somatic variant pipline that uses Mutect2 for variant calling.
+My workflow haven't been completed because of the fact that I faced troubleshoot in the processing the part of the known variant, and I tried a lot in solving the error and unfortunately I couldn't, so I haven't complete the rest of the workflow as the steps are built on each other.
+
+Problem that I faced in doing the project
+
+1)	Computational power for running the work 
+2)	Disk space 
+3)	Huge size of datasets to be used which is not applicable to be applied with my device 
+4)	Forcing a lot of troubleshootings, and how to solve them 
+5)	Wasting lots of time in downloading the data and repeating the downloads again and again, and in solving the troubleshoots
+
+Troubleshooting
+
+The errors are included in my script with the way I tried to solve them 
+
+Acknowledgement
+
+I would like to express my special thanks of gratitude to my group members. I am grateful to all of those with whom I have had the pleasure to work during this project. Each of the members of my group project has provided me extensive personal and professional guidance and endless help and support. I would especially like to thank Dr. Tamer, the course coordinator of the course for this wealthy and informative course and for his endless effort. Also He has shown me, by his example, what a good scientist (and person) should be.  As well as my teaching assistants ENG. Mohamed and ENG. Abdelrahman for everything they have done, their endless help, support and passion. They have taught me more than I could ever give them credit for. Also He has shown me, by his example, what a good scientist (and person) should be.
+
+
+ 
